@@ -135,8 +135,8 @@ fun main(args: Array<String>) {
             while (boolean == true) {
                 println("What average productivity (in %) would you like?")
                 println()
-                val desiredProductivityPre = Integer.valueOf(readLine())
-                val desiredProductivity = desiredProductivityPre.toFloat()
+                val desiredProductivityPre = (readLine())
+                val desiredProductivity = desiredProductivityPre!!.toFloat()
                 println()
                 if (desiredProductivity > 100) {
                     println("The desired productivity exceeds the best case average productivity and is not attainable.")
