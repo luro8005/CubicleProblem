@@ -52,7 +52,7 @@ fun main(args: Array<String>) {
         if (employees == (uCubicles + dCubicles)) {
             println("You have 100% productivity and 100% utility, no need for anyone to work from home!")
             println()
-            println("Would you like to restart? (Type 'yes')\n")
+            println("Would you like to restart? (Type 'yes', if not type 'no')\n")
             val restartEverything2 = readLine()
             println()
             if (restartEverything2 == "yes") {
@@ -66,7 +66,7 @@ fun main(args: Array<String>) {
             println("You have 100% productivity, but utility is only at ${(employees * 100 / sumCubicles)}%, no need for anyone" +
                     " to work from home. \nYou need to have ${sumCubicles - employees} more employees to reach 100% utility.")
             println()
-            println("Would you like to restart? (Type 'yes')\n")
+            println("Would you like to restart? (Type 'yes', if not type 'no')\n")
             val restartEverything3 = readLine()
             println()
             if (restartEverything3 == "yes") {
@@ -138,12 +138,12 @@ fun main(args: Array<String>) {
                 }
 
                 println("-----------------------------------------------------------------------------------------------------" +
-                        "---------------------")
+                        "--------------------------")
                 println("Worst case scenario (${"%.2f".format(worstRealProbability)}% average productivity): " +
                         "$uCubicles single cubicles, $dCubicles doubled cubicles and " +
                         "${if (worstPeopleWHF == 1) "$worstPeopleWHF person" else "$worstPeopleWHF people"} people working from home.\n" +
                         "-----------------------------------------------------------------------------------------------------" +
-                        "---------------------")
+                        "--------------------------")
                 println()
 
             }
